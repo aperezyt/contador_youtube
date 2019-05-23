@@ -79,7 +79,7 @@ void youtubeStats(){
   if (previousSubs != subs && previousSubs != -1){ 
     int dif = subs - previousSubs;
     if(dif<0)
-      ledMatrix.setText("-"+(String) dif);
+      ledMatrix.setText((String) dif);
     else
       ledMatrix.setText("+"+(String) dif);
     ledMatrix.setNextText((String) subs);
